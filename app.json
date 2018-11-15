@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/exchange/exchange",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "#fff",
+    "navigationBarBackgroundColor": "#75C4FF",
+    "navigationBarTitleText": "积分",
+    "navigationBarTextStyle": "#75C4FF"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#75C4FF",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "积分",
+        "iconPath": "images/icon/integral.png",
+        "selectedIconPath": "images/icon/integral-a.png"
+      },
+      {
+        "pagePath": "pages/exchange/exchange",
+        "text": "兑换",
+        "iconPath": "images/icon/exchange.png",
+        "selectedIconPath": "images/icon/exchange-a.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon/info.png",
+        "selectedIconPath": "images/icon/info-a.png"
+      }
+    ]
+  }
+}
