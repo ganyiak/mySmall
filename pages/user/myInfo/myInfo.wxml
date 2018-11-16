@@ -1,2 +1,6 @@
 <!--pages/user/myInfo/myInfo.wxml-->
-<text>pages/user/myInfo/myInfo.wxml</text>
+<view>
+  <view class='head'>
+    <image></image>
+  </view>
+</view>

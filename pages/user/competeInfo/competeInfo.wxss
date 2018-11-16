@@ -1,1 +1,25 @@
-/* pages/user/competeInfo/competeInfo.wxss */
+/*/* pages/user/competeInfo/competeInfo.wxss */
+.info_box {
+  font-size: 30rpx;
+  padding: 0 32rpx;
+  background: #fff;
+}
+.info_list {
+  padding: 34rpx 0;
+  border-bottom: 2rpx solid #dbd1d1;
+}
+input {
+  width: 30%;
+  float: right;
+  font-size: 30rpx;
+}
+.date {
+  display: inline-block;
+}
+.btn_submit {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+}
