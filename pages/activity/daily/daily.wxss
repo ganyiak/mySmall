@@ -1,0 +1,65 @@
+/* pages/activity/daily/daily.wxss */
+.daily_task {
+  height: 100%;
+  background: linear-gradient(#ef5b3e,#8a3fc3);
+}
+.task_box {
+  padding: 30rpx 32rpx;
+}
+.task_list {
+  width: 686rpx;
+  height: 180rpx;
+  background: #fff;
+  border-radius: 6rpx;
+  position: relative;
+  margin-bottom: 50rpx;
+}
+.task_list .disable {
+  background: #cccccc;
+}
+.task_title{  
+  position: absolute;
+  top: 44rpx;
+  left: 32rpx;
+  font-size: 34rpx;
+}
+.task_score {
+  position: absolute;
+  font-size: 30rpx;
+  color: #f87060;
+  left: 32rpx;
+  top: 92rpx;
+}
+.sign_up {
+  width: 184rpx;
+  height: 80rpx;
+  background: #ffd100;
+  border-radius: 40rpx;
+  position: absolute;
+  left: 470rpx;
+  top: 50rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+.first_back {
+  width: 620rpx;
+  height: 50rpx;
+  background: #fff;
+  opacity: 0.5;
+  position: absolute;
+  bottom: -10rpx;
+  left: 34rpx;
+  border-radius: 10rpx;
+}
+.second_back {
+  width: 558rpx;
+  height: 50rpx;
+  background: #fff;
+  opacity: 0.5;
+  position: absolute;
+  bottom: -20rpx;
+  left: 66rpx;
+  border-radius: 10rpx;
+}

@@ -1,4 +1,4 @@
-// pages/exchange/exchange.js
+// pages/user/competeInfo/competeInfo.js
 Page({
 
   /**
@@ -26,9 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.setNavigationBarTitle({
-      title: "兑换"
-    })
+
   },
 
   /**

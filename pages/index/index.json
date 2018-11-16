@@ -1,1 +1,12 @@
-{}
+{
+  "pages": [
+    "pages/activity/daily/daily"
+  ],
+  "window": {
+    "backgroundTextStyle": "#f2f2f2",
+    "navigationBarBackgroundColor": "#75C4FF",
+    "navigationBarTitleText": "积分",
+    "navigationBarTextStyle": "#75C4FF"
+  },
+  "disableScroll": true
+}

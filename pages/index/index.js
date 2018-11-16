@@ -4,15 +4,43 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    titleList: [
+      {
+        "title": "Bitbank推出比特币借贷服务",
+        "time": "2018-09-09 09:11"
+      },
+      {
+        "title": "Bitbank推出比特币借贷服务",
+        "time": "2018-09-09 09:11"
+      },
+      {
+        "title": "Bitbank推出比特币借贷服务",
+        "time": "2018-09-09 09:11"
+      }, 
+      {
+        "title": "Bitbank推出比特币借贷服务",
+        "time": "2018-09-09 09:11"
+      },
+      {
+        "title": "Bitbank推出比特币借贷服务",
+        "time": "2018-09-09 09:11"
+      }
+    ]
   },
   //事件处理函数
-  bindViewTap: function() {
+  openDailTask: function() {
+    console.log('dfgdfg')
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../activity/daily/daily'
+    })
+  },
+  openInfo: function () {
+    console.log('dfgdfg')
+    wx.navigateTo({
+      url: '../user/competeInfo/competeInfo'
     })
   },
   onLoad: function () {

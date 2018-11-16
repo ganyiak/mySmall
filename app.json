@@ -2,10 +2,12 @@
   "pages": [
     "pages/index/index",
     "pages/exchange/exchange",
-    "pages/my/my"
+    "pages/user/myInfo/myInfo",
+    "pages/activity/daily/daily",
+    "pages/user/competeInfo/competeInfo"
   ],
   "window": {
-    "backgroundTextStyle": "#fff",
+    "backgroundTextStyle": "#f2f2f2",
     "navigationBarBackgroundColor": "#75C4FF",
     "navigationBarTitleText": "积分",
     "navigationBarTextStyle": "#75C4FF"
@@ -13,7 +15,7 @@
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#75C4FF",
-    "list":[
+    "list": [
       {
         "pagePath": "pages/index/index",
         "text": "积分",
@@ -27,11 +29,12 @@
         "selectedIconPath": "images/icon/exchange-a.png"
       },
       {
-        "pagePath": "pages/my/my",
+        "pagePath": "pages/user/myInfo/myInfo",
         "text": "我的",
         "iconPath": "images/icon/info.png",
         "selectedIconPath": "images/icon/info-a.png"
       }
     ]
-  }
+  },
+  "enablePullDownRefresh": "false"
 }

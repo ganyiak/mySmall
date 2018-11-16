@@ -1,11 +1,27 @@
-// pages/exchange/exchange.js
+// pages/activity/daily/daily.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    dailyTask: [
+      {
+        "title": "每日签到",
+        "score": "+10积分",
+        "isSign": true
+      },
+      {
+        "title": "推文阅读",
+        "score": "+20积分",
+        "isSign": false
+      },
+      {
+        "title": "每日签到",
+        "score": "+10积分",
+        "isSign": false
+      }
+    ]
   },
 
   /**
@@ -26,9 +42,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.setNavigationBarTitle({
-      title: "兑换"
-    })
+
   },
 
   /**

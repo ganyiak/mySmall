@@ -1,13 +1,31 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class='banner-container'>
+    <image class='banner' src='../../images/img/bg_bef_banner.png'></image>
+    <view class='person-info'>
+      <view class='btn_fill' bindtap='openInfo'>立即完善</view>
+      <text>完善资料可领取10积分奖励</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='activity_box'>
+    <view class='daily_task' bindtap='openDailTask'>
+      <image src='../../images/img/home_icon_rc.png'></image>
+      <text>日常任务</text>
+    </view>
+    <view class='big_wheel'>
+      <image src='../../images/img/home_icon_zf.png'></image>
+      <text>大转盘</text>
+    </view>
+  </view>
+  <view class='share_task'>
+    <text class='title'>文章分享领积分</text>
+    <view class='title_list'>
+      <scroll-view scroll-y="true">
+        <view class='list'wx:for="{{titleList}}" wx:key="index">
+          <text class='list_title'>{{ item.title }}</text>
+          <text class='list_time'>{{ item.time }}</text>
+        </view>
+      </scroll-view>
+    </view>
   </view>
 </view>

@@ -1,0 +1,12 @@
+<!--pages/activity/daily/daily.wxml-->
+<view class='daily_task'>
+  <view class='task_box'>
+    <view class='task_list' wx:for="{{dailyTask}}" wx:key="index">
+      <text class='task_title'>{{ item.title }}</text>
+      <text class='task_score'>{{ item.score }}</text>
+      <view class="sign_up {{item.isSign?'disable':''}}">签到</view>
+      <view class='first_back'></view>
+      <view class='second_back'></view>
+    </view>
+  </view>
+</view>
