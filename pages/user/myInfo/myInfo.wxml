@@ -1,6 +1,16 @@
 <!--pages/user/myInfo/myInfo.wxml-->
 <view>
-  <view class='head'>
-    <image></image>
+  <view class='head_box'>
+    <view class='head'>
+      <image src="{{userInfo.avatarUrl}}" wx:if="{{hasUserInfo}}"></image>
+      <button wx:else open-type='getUserInfo' lang='zh_CN' bindgetuserinfo='getUserInfo'>登录</button>
+    </view>
+    <text class='current_score'>当前积分: 154578410.31</text>
+  </view>
+  <view class='nav_list'>
+    <view class='list' wx:for="{{navList}}" wx:key="index">
+      {{ item.title }}
+      <text style='float: right;'>></text>
+    </view>
   </view>
 </view>

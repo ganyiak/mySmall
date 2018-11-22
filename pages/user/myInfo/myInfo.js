@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userInfo: {},
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    navList: [
+      {
+        "title": '个人资料',
+        "url": ""
+      },
+      {
+        "title": '积分记录',
+        "url": ""
+      },
+      {
+        "title": '兑换记录',
+        "url": ""
+      }
+    ]
   },
 
   /**
@@ -26,7 +42,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let that = this
+    wx.getStorage({
+      key: 'userInfo',
+      success: function(res) {
+        that.setData({
+          userInfo: res.data,
+          hasUserInfo: true
+        })
+      },
+    })
   },
 
   /**
@@ -62,5 +87,26 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  getUserInfo () {
+    let that = this
+    wx.getSetting({
+      success (res) {
+        if (res.authSetting['scope.userInfo']) {
+          wx.getUserInfo({
+            success: function(res) {
+              that.setData({
+                hasUserInfo: true,
+                userInfo: res.userInfo
+              })
+              wx.setStorage({
+                key: 'userInfo',
+                data: res.userInfo,
+              })
+            }
+          })
+        }
+      }
+    })
   }
 })

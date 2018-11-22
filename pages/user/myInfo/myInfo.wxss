@@ -1,1 +1,25 @@
 /* pages/user/myInfo/myInfo.wxss */
+.head_box {
+  text-align: center;
+  margin-top: 80rpx;
+}
+.head {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.head image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.nav_list {
+  padding: 0 32rpx;
+  margin-top: 68rpx;
+  font-size: 30rpx;
+}
+.nav_list .list {
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #d8d8d8;
+}
